@@ -62,7 +62,7 @@ function removeItem(itemName) {
     showItemsList()
 }
 
-function ckeckItem(itemName) {
+function checkItem(itemName) {
     const item = items.find((item) => item.name === itemName)
 
     if (item.checked) {
@@ -71,4 +71,8 @@ function ckeckItem(itemName) {
         item.checked = true
     }
     showItemsList()
+}
+
+function addHideWarningClass() {
+    document.querySelector(".warning").classList.add("hide-warning")
 }
